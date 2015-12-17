@@ -1,6 +1,6 @@
-angular.module('sskart.products',['sskart.products.controllers','sskart.products.services']);
+angular.module('shirtsandshoes.products',['shirtsandshoes.products.controllers','shirtsandshoes.products.services']);
 
-angular.module('sskart.products').config(['$stateProvider','$locationProvider',function($stateProvider,$locationProvider){
+angular.module('shirtsandshoes.products').config(['$stateProvider','$locationProvider',function($stateProvider,$locationProvider){
 
 	$stateProvider.state('products',{
 		url:'/products',

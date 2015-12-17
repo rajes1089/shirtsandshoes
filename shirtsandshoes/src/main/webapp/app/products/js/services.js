@@ -1,6 +1,6 @@
-angular.module('sskart.products.services',[]);
+angular.module('shirtsandshoes.products.services',[]);
 
-angular.module('sskart.products.services').factory('productService',['$http',function($http){
+angular.module('shirtsandshoes.products.services').factory('productService',['$http',function($http){
 	return {
 		
 		getAll : function(){

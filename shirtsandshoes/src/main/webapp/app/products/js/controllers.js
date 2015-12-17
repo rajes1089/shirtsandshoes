@@ -1,8 +1,8 @@
-angular.module('sskart.products.controllers',[]);
+angular.module('shirtsandshoes.products.controllers',[]);
 
 
 
-angular.module('sskart.products.controllers').controller('ProductController',[
+angular.module('shirtsandshoes.products.controllers').controller('ProductController',[
 '$scope',
 'productService',
 function($scope,productService){
@@ -20,7 +20,7 @@ function($scope,productService){
 
 
 
-angular.module('sskart.products.controllers').controller('ProductDetailsController',[
+angular.module('shirtsandshoes.products.controllers').controller('ProductDetailsController',[
 '$scope',
 '$state',
 '$stateParams',
