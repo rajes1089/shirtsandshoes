@@ -8,10 +8,12 @@ angular.module('sskart.products.controllers').controller('ProductController',[
 function($scope,productService){
 	
 	$scope.getAllProducts = function(){
-		return productService.getAll();
+		productService.getAll().success(function(data){
+			$scope.products = data;
+		});
 	}
 	
-	$scope.products = $scope.getAllProducts();
+	$scope.getAllProducts();
 }
 ]);
 
@@ -26,13 +28,15 @@ angular.module('sskart.products.controllers').controller('ProductDetailsControll
 function($scope,$state,$stateParams,productService){
 
 	$scope.getProductById = function(id){
-		return productService.getProductById(id);
+		productService.getProductById(id).success(function(data){
+			$scope.product=data;
+		});
 	};
 			
 	$scope.closeProduct = function(){
 		$state.go('products');		
 	};
 	
-	$scope.product = $scope.getProductById($stateParams.id);
+	$scope.getProductById($stateParams.id);
 }
 ]);
