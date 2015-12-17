@@ -1,4 +1,8 @@
-angular.module('shirtsandshoes.products',['shirtsandshoes.products.controllers','shirtsandshoes.products.services']);
+angular.module('shirtsandshoes.products',
+		['shirtsandshoes.products.controllers',
+         'shirtsandshoes.products.services',
+         'shirtsandshoes.products.directives']
+);
 
 angular.module('shirtsandshoes.products').config(['$stateProvider','$locationProvider',function($stateProvider,$locationProvider){
 
