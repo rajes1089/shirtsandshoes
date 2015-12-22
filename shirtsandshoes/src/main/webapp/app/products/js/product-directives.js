@@ -2,11 +2,11 @@ angular.module('shirtsandshoes.products.directives',[]);
 
 angular.module('shirtsandshoes.products.directives').directive('productThumbnail',[function(){
 	return {
-		restrict : 'E',
+		restrict : 'EA',
 		scope : {
-			product : '@productObj'
+			product : '='
 		},
 		replace : true,
-		templateUrl : 'app/products/views/productThumbnail.html'
+		templateUrl : 'app/products/views/product-tile.html'
 	}
 }]);

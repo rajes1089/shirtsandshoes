@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Shoes &amp; Shirts</title>
+<title>Shirts &amp; Shoes</title>
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 </head>
-<body ng-app="shirtsandshoes">
+<body data-ng-app="shirtsandshoes">
 
 <div class="container">
 	<br>
@@ -14,7 +14,7 @@
 		<p>One stop shopping for all</p>
 	</div>
 	
-	<div ui-view></div>
+	<div data-ui-view></div>
 	
 	<div class="row footer">
 		<p>Shirts &amp;  Shoes 1.0</p>
@@ -26,9 +26,9 @@
 </body>
 <script type="text/javascript" src="resources/js/angular-1.4.8/angular.js"></script>
 <script type="text/javascript" src="resources/js/angular-ui-router.js"></script>
-<script type="text/javascript" src="app/products/js/directives.js"></script>
-<script type="text/javascript" src="app/products/js/controllers.js"></script>
-<script type="text/javascript" src="app/products/js/services.js"></script>
-<script type="text/javascript" src="app/products/productModule.js"></script>
+<script type="text/javascript" src="app/products/js/product-directives.js"></script>
+<script type="text/javascript" src="app/products/js/product-controllers.js"></script>
+<script type="text/javascript" src="app/products/js/product-services.js"></script>
+<script type="text/javascript" src="app/products/product-module.js"></script>
 <script type="text/javascript" src="app/shirtsandshoes.js"></script>
 </html>

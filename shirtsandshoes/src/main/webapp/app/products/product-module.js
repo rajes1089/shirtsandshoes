@@ -8,7 +8,7 @@ angular.module('shirtsandshoes.products').config(['$stateProvider','$locationPro
 
 	$stateProvider.state('products',{
 		url:'/products',
-		templateUrl:'app/products/views/products.html',
+		templateUrl:'app/products/views/product-list.html',
 		controller: 'ProductController'
 	});
 	
