@@ -1,16 +1,16 @@
-<div class="col-sm-6 col-md-3" style="height: 400px;">
-	<div class="panel panel-primary">
+<div class="col-sm-6 col-md-3" style="min-height: 400px;">
+	<div class="panel panel-success">
 		 
 		  <div class="panel-heading">
-		    <h3 class="panel-title">{{product.name}}</h3>
+		    <h2 class="panel-title"><strong>{{product.name}}</strong>&nbsp;</h2>
 		  </div>
 		  
 		  <div class="panel-body">
 		    <a data-ui-sref="product({id:product.id})" class="thumbnail">
 			<img class="img-responsive" alt="{{product.name}}" data-ng-src="app/products/img/{{product.fileName}}">
 			</a>
-			<div align="right">
-				<a href="#" class="btn btn-success btn-sm" role="button"> Add to Cart </a> 
+			<div>
+				<a href="#" class="btn btn-block btn-warning " role="button"> Add to Cart <span class="">{{product.price | currency}}</span> </a> 
 			</div>
 		  </div>
 	</div>
